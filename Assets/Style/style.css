@@ -1,0 +1,25 @@
+header{
+    min-height: 30vh;
+    }
+main{
+    min-height: 65vh;
+}
+.card-text{
+    text-align: justify;
+}
+.navbar, .bar, .bg-footer{
+    background-color: #36140b;
+}
+body{
+    background-color: #8f5d35;
+}
+.bg-card{
+    background-color: #efd06a ;
+    box-shadow: rgb(80, 75, 3) -10px 10px 10px 4px
+}
+.bg-btn{
+    background-color: #494300;
+}
+.tx-form, .tx-footer{
+    color: aliceblue;
+}
