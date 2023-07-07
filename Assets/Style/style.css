@@ -1,25 +1,121 @@
+body{
+    background-color: #606060;
+    overflow-x: hidden;
+}
 header{
     min-height: 30vh;
     }
 main{
     min-height: 65vh;
 }
-.card-text{
-    text-align: justify;
-}
 .navbar, .bar, .bg-footer{
-    background-color: #36140b;
-}
-body{
-    background-color: #8f5d35;
+    background-color: #191919;
 }
 .bg-card{
-    background-color: #efd06a ;
-    box-shadow: rgb(80, 75, 3) -10px 10px 10px 4px
+    background-color: #2B2B2B ;
+    box-shadow: rgb(31, 31, 30) -10px 10px 10px 4px
+}
+.card-text{
+    text-align: justify;
+    color: aliceblue;
 }
 .bg-btn{
-    background-color: #494300;
+    background-color: #4E4E4E;
 }
-.tx-form, .tx-footer{
-    color: aliceblue;
+
+.whatsapp{
+    position: relative;  
+}
+.whatsapp:before,
+.whatsapp :after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -2px;
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    background-color: rgb(19, 152, 19);
+    opacity: 0;
+    animation: ondas 2s infinite; 
+}
+.whatsapp:before{
+    animation-delay: 1s;
+}
+.whatsapp:after{
+    animation-delay: 2s;
+}
+.whatsapp img{
+    position: relative; 
+    border-radius: 50%;
+    z-index: 1; 
+}
+
+.instagram{
+    position: relative;
+}
+.instagram:before,
+.instagram :after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -2px;
+    width: 71px;
+    height: 71px;
+    border-radius: 15px;
+    background-color: rgb(173, 16, 95);
+    opacity: 0;
+    animation: ondas 2s infinite; 
+}
+.instagram:before{
+    animation-delay: 1s;
+}
+.instagram:after{
+    animation-delay: 2s;
+}
+.instagram img{
+    position: relative;
+    border-radius: 30%;
+    z-index: 1;
+}
+
+.facebook{
+    position: relative; 
+}
+.facebook:before,
+.facebook :after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -2px;
+    width: 71px;
+    height: 71px;
+    border-radius: 15px;
+    background-color: rgba(48, 38, 187, 0.779);
+    opacity: 0;
+    animation: ondas 2s infinite; 
+}
+.facebook:before{
+    animation-delay: 1s;
+}
+.facebook:after{
+    animation-delay: 2s;
+}
+.facebook img{
+    position: relative;
+    border-radius: 30%;
+    z-index: 1;
+}
+@keyframes ondas {
+    0%{
+      transform: scale(0.4);
+    }
+    15%{
+      opacity: 1;
+  
+    }
+    100%{
+      opacity: 0;
+      transform: scale(1);
+    }    
 }

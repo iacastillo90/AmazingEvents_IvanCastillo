@@ -10,214 +10,195 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg border rounded" data-bs-theme="dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="/Assets/Images/amazing_brand.png" alt="logo Amazing Events" width="120">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Assets/Pages/upcoming_Events.html">Upcoming</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Assets/Pages/past_Events.html">Past Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Assets/Pages/contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Assets/Pages/stats.html">Stats</a>
-                        </li>
-                    </ul>
+        <nav class="navbar navbar-expand-lg navbar-expand-md border rounded container-fluid" data-bs-theme="dark">
+            <a class="navbar-brand mx-3 "  href="#">
+                <img src="/Assets/Images/amazing_brand.png" alt="logo Amazing Events" width="120">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="nav collapse navbar-collapse justify-content-end"  id="navbarNav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Assets/Pages/upcoming_Events.html">Upcoming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Assets/Pages/past_Events.html">Past Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Assets/Pages/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="/Assets/Pages/stats.html">Stats</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="carousel" class="carousel slide " data-bs-ride="carousel">
+            <h2 class="position-absolute top-50 start-50 translate-middle z-3 fw-bold fs-1">Home</h2>
+            <div class="carousel-inner">
+                <div class="carousel-item ">
+                    <img src="/Assets/Images/Option1.jpg" class="object-fit-cover border rounded w-100" height="250" alt="City">
+                </div>
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/Assets/Images/Option2.jpg" class="object-fit-cover border rounded w-100" height="250" alt="Sky">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/Assets/Images/optional_banner_3.jpg" class="object-fit-cover border rounded w-100" height="250" alt="Station">
                 </div>
             </div>
-        </nav>
-        <section class="carousel slide " data-bs-ride="carousel">
-            <h2 class="position-absolute top-50 start-50 translate-middle z-3">Home</h2>
-            <div class="carousel-inner">
-              <div class="carousel-item ">
-                <img src="/Assets/Images/Option1.jpg" class="object-fit-cover border rounded w-100" height="250" alt="City">
-              </div>
-              <div class="carousel-item active">
-                <img src="/Assets/Images/Option2.jpg" class="object-fit-cover border rounded w-100" height="250" alt="Sky">
-              </div>
-              <div class="carousel-item">
-                <img src="/Assets/Images/optional_banner_3.jpg" class="object-fit-cover border rounded w-100" height="250" alt="Station">
-              </div>
-            </div>
+	        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+  	        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    		    <span class="visually-hidden">Next</span>
+  	        </button>
         </section>
     </header>
     <main>
         <div class="bar d-flex justify-content-around align-items-center m-2 border rounded ">
-            <form action="/Assets/Pages/show_data.html" class="tx-form ">
-                <label for="Food_Fair">Food Fair</label>
+            <form action="/Assets/Pages/show_data.html" class="text-light">
+                <label for="Food_Fair">Food </label>
                 <input type="checkbox" id="Food_Fair" name="Food Fair" value="Food Fair">
                 <label for="Museum">Museum</label>
                 <input type="checkbox" id="Museum" name="Museum" value="Museum">
-                <label for="costume_party">Costume Party</label>
+                <label for="costume_party">Party</label>
                 <input type="checkbox" id="costume_party" name="Party" value="Party">
-                <label for="music_concert">Music Concert</label>
+                <label for="music_concert">Concert</label>
                 <input type="checkbox" id="music_concert" name="Music" value="Music">
                 <label for="marathon">Race</label>
                 <input type="checkbox" name="marathon" id="marathon" value="marathon">
-                <label for="book">Book Exchange</label>
+                <label for="book">Book</label>
                 <input type="checkbox" name="book" id="book" value="book">
-                <label for="cinema">Let's go to the cinema</label>
+                <label for="cinema">Cinema</label>
                 <input type="checkbox" name="cinema" id="cinema" value="cinema">
             </form>
             <div class="navbar">
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn bg-btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn bg-btn text-light" type="submit">Search</button>
                 </form>
             </div>
         </div>
         <div class="container">
-            <div class="row justify-content-around mt-5">
-                <div class="d-flex justify-content-center col-md-4 col-lg-3 mb-4">
-                    <div class="bg-card card p-3" style="height: 25rem; width: 16rem;">
-                        <img src="/Assets/Images/food_fair.jpg" class="card-img-top border rounded" style="height: 16rem;" alt="Festival of the Collectivities">
-                        <h5 class="card-title text-center mb-0 mt-2">Festival of the Collectivities</h5>
-                        <div class="card-body p-2">
-                            <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for the whole family.</p>
+            <div class="row justify-content-around mt-5 gap-5 mb-5">
+                <article class="bg-card card p-3 col-md-4 col-lg-3" style="height: 25rem; width: 14rem"> 
+                    <img src="/Assets/Images/food_fair.jpg" class="card-img-top border rounded" style="height: 8rem;" alt="Festival of the Collectivities">
+                    <h4 class="text-center mt-2 text-light">Festival of the Collectivities</h4>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h6 class="card-text fw-light">Enjoy your favorite dishes from different countries in a unique event for the whole family.</h6>
+                        <div class="d-flex justify-content-between align-items-baseline mt-1" >
+                            <p class="text-light fw-light m-0">Price: 5</p>
+                            <a class="btn bg-btn text-light nav-link d-flex justify-content-center align-items-center" style="height: 2.3rem;width: 4.5rem; " href="/Assets/Pages/details.html">Details</a>     
+                        </div>
+                    </div>    
+                </article>
+                <article class="bg-card card p-3 col-md-4 col-lg-3" style="height: 25rem; width: 14rem" >
+                    <img src="/Assets/Images/outing_to_the_museum.jpg" class="card-img-top border rounded" alt="Art Exhibition">
+                    <h4 class="text-center mt-2 text-light">Art Exhibition</h4>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h6 class="card-text fw-light">Let's go to the art museum for an incredible tour to learn about the largest dinosaurs.</h6>
+                        <div class="d-flex justify-content-between  align-items-baseline">
+                            <p class="text-light fw-light m-0">Price: 15</p>
+                            <a class="btn bg-btn text-light nav-link d-flex justify-content-center align-items-center" style="height: 2.3rem;width: 4.5rem; " href="/Assets/Pages/details.html">Details</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-card card p-3 col-md-4 col-lg-3" style="height: 25rem; width: 14rem">
+                    <img src="/Assets/Images/costume_party.jpg" class="card-img-top border rounded" alt="Halloween Night">
+                    <h4 class="text-center mt-2 text-light">Halloween Night</h4>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h6 class="card-text fw-light">Come in your scariest costume character to win amazing prizes.</h6>
+                        <div class="d-flex justify-content-between align-items-baseline" >
+                            <p class="text-light fw-light m-0">Price: 12</p>
+                            <a class="btn bg-btn text-light nav-link d-flex justify-content-center align-items-center" style="height: 2.3rem;width: 4.5rem; " href="/Assets/Pages/details.html">Details</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-card card p-3 col-md-4 col-lg-3" style="height: 25rem; width: 14rem">
+                    <img src="/Assets/Images/music_concert.jpg" class="card-img-top border rounded" alt="Metallica in Concert">
+                    <h4 class="card-title text-center mt-2 text-light">Metallica in Concert</h4>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h6 class="card-text fw-light">The only concert of the most emblematic band in the world.</h6>
+                        <div class="d-flex justify-content-between align-items-baseline">
+                            <p class="text-light fw-light m-0">Price: 150</p>
+                            <a class="btn bg-btn text-light nav-link d-flex justify-content-center align-items-center" style="height: 2.3rem;width: 4.5rem; " href="/Assets/Pages/details.html">Details</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-card card p-3 col-md-4 col-lg-3" style="height: 25rem; width: 14rem">
+                    <img src="/Assets/Images/marathon.jpg" class="card-img-top border rounded" alt="10K for life">
+                    <h4 class="card-title text-center mt-2 text-light">10K for life</h4>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h6 class="card-text fw-light">Come and exercise, improve your health and lifestyle.</h6>
+                        <div class="d-flex justify-content-between align-items-baseline" style="height: 2.3rem;">
+                            <p class="text-light fw-light m-0">Price: 3</p>
+                            <a class="btn bg-btn text-light nav-link d-flex justify-content-center align-items-center" style="height: 2.3rem;width: 4.5rem; " href="/Assets/Pages/details.html">Details</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-card card p-3 col-md-4 col-lg-3" style="height: 25rem; width: 14rem">
+                    <img src="/Assets/Images/books.jpg" class="card-img-top border rounded" alt="School Book Fair">
+                    <h4 class="card-title text-center mt-2 text-light">School Book Fair</h4>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h6 class="card-text fw-light">Bring your unused school book and bring the one you need.</h6>
+                        <div class="d-flex justify-content-between align-items-baseline" style="height: 2.3rem;">
+                            <p class="text-light fw-light m-0">Price: 1</p>
+                            <a class="btn bg-btn text-light nav-link d-flex justify-content-center align-items-center" style="height: 2.3rem;width: 4.5rem; " href="/Assets/Pages/details.html">Details</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-card card p-3 col-md-4 col-lg-3" style="height: 25rem; width: 14rem">
+                    <img src="/Assets/Images/cinema.jpg" class="card-img-top border rounded" alt="Cinema Avengers">
+                    <h4 class="card-title text-center mt-2 text-light">Avengers</h4>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h6 class="card-text fw-light">Marvel's Avengers 3d premiere the start of an epic saga with your best superheroes</h6>
                             <div class="d-flex justify-content-between align-items-baseline" style="height: 2.3rem;">
-                                <p>Price: 5</p>
-                                <nav class="bg-btn border rounded">
-                                    <a href="/Assets/Pages/details.html" class=" btn ">Details</a>
-                                </nav>
+                                <p class="text-light fw-light m-0">Price: 250</p>
+                                <a class="btn bg-btn text-light nav-link d-flex justify-content-center align-items-center" style="height: 2.3rem;width: 4.5rem; " href="/Assets/Pages/details.html">Details</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center col-md-4 col-lg-3 mb-4">
-                    <div class="bg-card card p-3" style="height: 25rem; width: 16rem;">
-                        <img src="/Assets/Images/outing_to_the_museum.jpg" class="card-img-top border rounded" alt="Art Exhibition">
-                        <h5 class="card-title text-center mt-2">Art Exhibition</h5>
-                        <div class="card-body">
-                            <p class="card-text">Let's go to the art museum for an incredible tour to learn about the largest dinosaurs.</p>
-                            <div class="d-flex justify-content-between  align-items-baseline mt-4" style="height: 2.3rem;">
-                                <p>Price: 15</p>
-                                <nav class="bg-btn border rounded">
-                                    <a href="/Assets/Pages/details.html#art" class="btn ">Details</a>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center col-md-4 col-lg-3 mb-4">
-                    <div class="bg-card card p-3 " style="height: 25rem; width: 16rem;">
-                        <img src="/Assets/Images/costume_party.jpg" class="card-img-top border rounded" alt="Halloween Night">
-                        <h5 class="card-title text-center mt-2">Halloween Night</h5>
-                        <div class="card-body">
-                            <p class="card-text">Come in your scariest costume character to win amazing prizes.</p>
-                                <div class="d-flex justify-content-between  align-items-baseline mt-5" style="height: 2.3rem;">
-                                    <p>Price: 12</p>
-                                    <nav class="bg-btn border rounded">
-                                        <a href="/Assets/Pages/details.html#party" class="btn ">Details</a>
-                                    </nav>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center col-md-4 col-lg-3 mb-4">
-                    <div class="bg-card card p-3" style="height: 25rem; width: 16rem;">
-                        <img src="/Assets/Images/music_concert.jpg" class="card-img-top border rounded" alt="Metallica in Concert">
-                        <h5 class="card-title text-center mt-2">Metallica in Concert</h5>
-                        <div class="card-body">
-                            <p class="card-text">The only concert of the most emblematic band in the world.</p>
-                            <div class="d-flex justify-content-between align-items-baseline mt-5" style="height: 2.3rem;">
-                                <p>Price: 150</p>
-                                <nav class="bg-btn border rounded">
-                                    <a href="/Assets/Pages/details.html#music" class="btn">Details</a>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-around mt-5 mb-5">
-                <div class="d-flex justify-content-center col-md-4 col-lg-3 mb-4">
-                    <div class="bg-card card p-3" style="height: 25rem; width: 16rem;">
-                        <img src="/Assets/Images/marathon.jpg" class="card-img-top border rounded" alt="10K for life">
-                        <h5 class="card-title text-center mt-2">10K for life</h5>
-                        <div class="card-body">
-                            <p class="card-text">Come and exercise, improve your health and lifestyle.</p>
-                            <div class="d-flex justify-content-between align-items-baseline mt-5" style="height: 2.3rem;">
-                                <p>Price: 3</p>
-                                <nav class="bg-btn border rounded">
-                                    <a href="/Assets/Pages/details.html#marathon" class="btn">Details</a>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center col-md-4 col-lg-3 mb-4">
-                    <div class="bg-card card p-3 " style="height: 25rem; width: 16rem;">
-                        <img src="/Assets/Images/books.jpg" class="card-img-top border rounded" alt="School Book Fair">
-                        <h5 class="card-title text-center mt-2">School Book Fair</h5>
-                        <div class="card-body">
-                            <p class="card-text">Bring your unused school book and bring the one you need.</p>
-                            <div class="d-flex justify-content-between align-items-baseline mt-5" style="height: 2.3rem;">
-                                <p>Price: 1</p>
-                                <nav class="bg-btn border rounded">
-                                    <a href="/Assets/Pages/details.html#books" class="btn ">Details</a>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center col-md-4 col-lg-3 mb-4">
-                    <div class="bg-card card p-3 " style="height: 25rem; width: 16rem;">
-                        <img src="/Assets/Images/cinema.jpg" class="card-img-top border rounded" alt="Cinema Avengers">
-                        <h5 class="card-title text-center mt-2">Avengers</h5>
-                        <div class="card-body">
-                            <p class="card-text">Marvel's Avengers 3d premiere the start of an epic saga with your best superheroes</p>
-                            <div class="d-flex justify-content-between align-items-baseline mt-4" style="height: 2.3rem;">
-                                <p>Price: 250</p>
-                                <nav class="bg-btn border rounded">
-                                    <a href="/Assets/Pages/details.html#Avengers" class="btn">Details</a>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </article>      
+            </div>     
+        </div>
+        <div class="container" >
+            <div class="row justify-content-around mt-5 gap-5 mb-5" id="contenedor">
+
             </div>
         </div>
     </main>
     <footer>    
         <nav class="bg-footer d-flex justify-content-between border rounded align-items-center">
             <ul class="nav">
-                <li class="nav-item">
-                    <a class="numer" href="tel:34678567876">
+                <li class="nav-item whatsapp">
+                    <a class="nav-link" href="tel:34678567876">
                         <img src="/Assets/Images/whatsapp.png" alt="whatsapp" width="35">        
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item facebook">
                     <a class="nav-link" href="amazingevents@hotmail.com">
                         <img src="/Assets/Images/facebook.png" alt="facebook" width="35">
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item instagram">
                     <a class="nav-link" href="http://bit.ly/2U4iZNCzxcz">
                         <img src="/Assets/Images/instagram.png" alt="instagram" width="35">
                     </a>
                 </li>
             </ul>
             <section class="d-flex align-items-center mx-4">
-                <h4 class="tx-footer">COHORT 49</h4>
+                <h4 class="text-light">COHORT 49</h4>
                 <a class="navbar-brand" href="https://mindhublab.com/">
                     <img src="/Assets/Images/Insignia_JAVA-19.png" alt="Mindhub" width="60">
                 </a>
             </section>
         </nav>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="/data.js"></script>
+    <script src="/main.js"></script>
 </body>
 </html>
