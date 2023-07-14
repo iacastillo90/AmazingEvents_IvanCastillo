@@ -59,77 +59,16 @@
         </section>
     </header>
     <main>
-        <div class="bar d-flex justify-content-around align-items-center m-2 border rounded ">
-            <form action="/Assets/Pages/show_data.html" class="text-light">
-                <label for="Food_Fair">Food </label>
-                <input type="checkbox" id="Food_Fair" name="Food Fair" value="Food Fair">
-                <label for="Museum">Museum</label>
-                <input type="checkbox" id="Museum" name="Museum" value="Museum">
-                <label for="costume_party">Party</label>
-                <input type="checkbox" id="costume_party" name="Party" value="Party">
-                <label for="music_concert">Concert</label>
-                <input type="checkbox" id="music_concert" name="Music" value="Music">
-                <label for="marathon">Race</label>
-                <input type="checkbox" name="marathon" id="marathon" value="marathon">
-                <label for="book">Book</label>
-                <input type="checkbox" name="book" id="book" value="book">
-                <label for="cinema">Cinema</label>
-                <input type="checkbox" name="cinema" id="cinema" value="cinema">
-            </form>
+        <div class="bar d-flex justify-content-around align-items-center m-2 border rounded " id="contenedorCheckbox">
+
             <div class="navbar">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
                     <button class="btn bg-btn text-light" type="submit">Search</button>
                 </form>
             </div>
         </div>
         <div class="container">
-            <div class="row justify-content-around mt-5 gap-5 mb-5">
-                <article class="bg-card card p-3 col-md-4 col-lg-3" style="height: 25rem; width: 14rem"> 
-                    <img src="/Assets/Images/food_fair.jpg" class="card-img-top border rounded" style="height: 8rem;" alt="Festival of the Collectivities">
-                    <h4 class="text-center mt-2 text-light">Festival of the Collectivities</h4>
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <h6 class="card-text fw-light">Enjoy your favorite dishes from different countries in a unique event for the whole family.</h6>
-                        <div class="d-flex justify-content-between align-items-baseline mt-1" >
-                            <p class="text-light fw-light m-0">Price: 5</p>
-                            <a class="btn bg-btn text-light nav-link d-flex justify-content-center align-items-center" style="height: 2.3rem;width: 4.5rem; " href="/Assets/Pages/details.html">Details</a>     
-                        </div>
-                    </div>    
-                </article>
-                <article class="bg-card card p-3 col-md-4 col-lg-3" style="height: 25rem; width: 14rem" >
-                    <img src="/Assets/Images/outing_to_the_museum.jpg" class="card-img-top border rounded" alt="Art Exhibition">
-                    <h4 class="text-center mt-2 text-light">Art Exhibition</h4>
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <h6 class="card-text fw-light">Let's go to the art museum for an incredible tour to learn about the largest dinosaurs.</h6>
-                        <div class="d-flex justify-content-between  align-items-baseline">
-                            <p class="text-light fw-light m-0">Price: 15</p>
-                            <a class="btn bg-btn text-light nav-link d-flex justify-content-center align-items-center" style="height: 2.3rem;width: 4.5rem; " href="/Assets/Pages/details.html">Details</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="bg-card card p-3 col-md-4 col-lg-3" style="height: 25rem; width: 14rem">
-                    <img src="/Assets/Images/marathon.jpg" class="card-img-top border rounded" alt="10K for life">
-                    <h4 class="card-title text-center mt-2 text-light">10K for life</h4>
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <h6 class="card-text fw-light">Come and exercise, improve your health and lifestyle.</h6>
-                        <div class="d-flex justify-content-between align-items-baseline" style="height: 2.3rem;">
-                            <p class="text-light fw-light m-0">Price: 3</p>
-                            <a class="btn bg-btn text-light nav-link d-flex justify-content-center align-items-center" style="height: 2.3rem;width: 4.5rem; " href="/Assets/Pages/details.html">Details</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="bg-card card p-3 col-md-4 col-lg-3" style="height: 25rem; width: 14rem">
-                    <img src="/Assets/Images/books.jpg" class="card-img-top border rounded" alt="School Book Fair">
-                    <h4 class="card-title text-center mt-2 text-light">School Book Fair</h4>
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <h6 class="card-text fw-light">Bring your unused school book and bring the one you need.</h6>
-                        <div class="d-flex justify-content-between align-items-baseline" style="height: 2.3rem;">
-                            <p class="text-light fw-light m-0">Price: 1</p>
-                            <a class="btn bg-btn text-light nav-link d-flex justify-content-center align-items-center" style="height: 2.3rem;width: 4.5rem; " href="/Assets/Pages/details.html">Details</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
             <div class="container ">
                 <div class="row justify-content-around mt-5 gap-5 mb-5" id="pastEvents">
 
