@@ -58,64 +58,40 @@
   	        </button>
         </section>
     </header>
-    <main class="container">
-        <table class="table table-bordered rounded row-cols-6 mt-5 mb-5 bg-card">
-            <thead >
-                <tr>
-                    <th class="table-secondary border rounded" colspan="3">Events Statistics</th>
-                </tr>
-                <tr>
-                    <td>Events with highest % of assistance</td>
-                    <td>Events with lowest % of assistance</td>
-                    <td>Events with larger capacity</td>
-                </tr>
-                <tr>
-                    <td> .</td>
-                    <td> .</td>
-                    <td> .</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th class="table-secondary border rounded" colspan="3">Upcoming events statistcs by category</th>
-                </tr>
-                <tr>
-                    <td>Categories</td>
-                    <td>Revenues</td>
-                    <td>Percentage of assitance</td>
-                </tr>
-                <tr>
-                    <td> .</td>
-                    <td> .</td>
-                    <td> .</td>
-                </tr>
-                <tr>
-                    <td> .</td>
-                    <td> .</td>
-                    <td> .</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th class="table-secondary border rounded" colspan="3">Past events statistics by category</th>
-                </tr>
-                <tr>
-                    <td>Categories</td>
-                    <td>Revenues</td>
-                    <td>Percentage of assitance</td>
-                </tr>
-                <tr>
-                    <td> .</td>
-                    <td> .</td>
-                    <td> .</td>
-                </tr>
-                <tr>
-                    <td> .</td>
-                    <td> .</td>
-                    <td> .</td>
-                </tr>
-            </tfoot>
-        </table>
+    <main class="container" id="contenedorError">
+            <table class="table table-bordered rounded row-cols-6 mt-5 mb-5 bg-card" id="contenedorTabla1">
+
+            </table>
+            <table class="table table-bordered rounded row-cols-6 mt-5 mb-5 bg-card">  
+                <tbody>
+                    <tr>
+                        <th class="table-secondary border rounded" colspan="3">Past events statistics by category</th>
+                    </tr>
+                    <tr>
+                        <td>Categories</td>
+                        <td>Revenues</td>
+                        <td>Percentage of assitance</td>
+                    </tr>
+                    <tfoot id="contenedorTabla2">
+
+                    </tfoot>
+                </tbody>
+            </table>
+            <table class=" table table-bordered rounded row-cols-6 mt-5 mb-5 bg-card">  
+                <tbody>
+                    <tr>
+                        <th class="table-secondary border rounded" colspan="3">Upcoming events statistcs by category</th>
+                    </tr>
+                    <tr>
+                        <td>Categories</td>
+                        <td>Revenues</td>
+                        <td>Percentage of assitance</td>
+                    </tr >
+                </tbody>
+                <tfoot id="contenedorTabla3">
+                
+                </tfoot>
+            </table>
     </main>
     <footer>    
         <nav class="bg-footer d-flex justify-content-between border rounded align-items-center">
@@ -145,5 +121,6 @@
         </nav>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script type="module" src="/scripts/stats.js"></script>
 </body>
 </html>
